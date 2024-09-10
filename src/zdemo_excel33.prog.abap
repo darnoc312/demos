@@ -51,8 +51,8 @@ START-OF-SELECTION.
   CREATE OBJECT lo_converter.
 
   ls_option-conv_exit_length = p_convex.
-  lo_converter->set_option( ls_option ).
   lo_converter->convert( EXPORTING
+                            is_option    = ls_option
                             it_table     = lt_test
                             i_row_int    = 1
                             i_column_int = 1
